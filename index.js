@@ -1,9 +1,22 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let stringReverse = [...word].reverse().join("");
+  console.log(stringReverse)
+  if (word === stringReverse) {
+    return true;
+  } else{
+    return false;
+  }
 }
+
 
 /* 
   Add your pseudocode here
+  Do the characters of the argument string match the same characters of the same string written backwards?
+  Manipulate the argument string to rewrite it backwards
+  Set a variable equal to the string written backwards
+  Compare that variable to the argument
+  return the bollean if true or false
 */
 
 /*
